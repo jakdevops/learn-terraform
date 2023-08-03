@@ -27,11 +27,10 @@ output "furit_name"{
   variable "fruit_stock_with_price" {
     default = {
       apple = {
-         stock =  100
+         stock =  2100
          price = 1
        }
-       guva = {
-         stock = 202
+       guva = {         stock = 202
          price = 1
         }
        }
@@ -50,3 +49,22 @@ output "furit_name"{
    output "fruit_stock_apple"{
     value = var.fruit_stock["apple"]
    }
+
+
+# varialble data types.
+
+ variable "fruit_details"{
+   default = {
+     apple = {
+       stock = 11
+       type = "simla"
+       for_sale = true
+     }
+   }
+   }
+
+   #variable in a combination of any other string then it needs to be within ${}
+
+   output "fruit_details_apple"
+      value =  "apple stock = ${var.fruit_details["apple"].stock} , apple type = ${var.fruit_details["apple"].type}, apple sale status = ${var.fruit_details["apple"].for_sale}"
+
