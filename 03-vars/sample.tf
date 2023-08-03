@@ -12,7 +12,7 @@ output "furit_name"{
       "apple"
       "guva"
  ]
-     default = [ "apple","guva" ]  // list of variable
+     default = [ "apple","guva" ]
      }
 
    #map variable
