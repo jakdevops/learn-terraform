@@ -1,3 +1,3 @@
 variable "fruit_name"{
-   default = "apple"
+   default = "apple fruit"
 }
