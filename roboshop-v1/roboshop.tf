@@ -13,7 +13,7 @@ resource "aws_route53_record" "frontend" {
   name    = "frontend-dev.jakdevops.online"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.frontend.private-ip]
+  records = [aws_instance.frontend.private_ip]
 }
 
 
@@ -32,7 +32,7 @@ resource "aws_route53_record" "mongodb" {
   name    = "mongodb-dev.jakdevops.online"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.mongodb.private-ip]
+  records = [aws_instance.mongodb.private_ip]
 }
 
 resource "aws_instance" "catalogue" {
@@ -50,7 +50,7 @@ resource "aws_route53_record" "catalogue" {
   name    = "catalogue-dev.jakdevops.online"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.catalogue.private-ip]
+  records = [aws_instance.catalogue.private_ip]
 }
 
 resource "aws_instance" "redis" {
@@ -68,7 +68,7 @@ resource "aws_route53_record" "redis" {
   name    = "redis-dev.jakdevops.online"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.redis.private-ip]
+  records = [aws_instance.redis.private_ip]
 }
 
 resource "aws_instance" "user" {
@@ -86,7 +86,7 @@ resource "aws_route53_record" "user" {
   name    = "user-dev.jakdevops.online"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.user.private-ip]
+  records = [aws_instance.user.private_ip]
 }
 
 resource "aws_instance" "mysql" {
@@ -104,7 +104,7 @@ resource "aws_route53_record" "mysql" {
   name    = "mysql-dev.jakdevops.online"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.mysql.private-ip]
+  records = [aws_instance.mysql.private_ip]
 }
 
 resource "aws_instance" "shipping" {
@@ -122,7 +122,7 @@ resource "aws_route53_record" "shipping" {
   name    = "shipping-dev.jakdevops.online"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.shipping.private-ip]
+  records = [aws_instance.shipping.private_ip]
 }
 
 resource "aws_instance" "rabbitmq" {
@@ -140,7 +140,7 @@ resource "aws_route53_record" "rabbitmq" {
   name    = "rabbitmq-dev.jakdevops.online"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.rabbitmq.private-ip]
+  records = [aws_instance.rabbitmq.private_ip]
 }
 
 resource "aws_instance" "payment" {
@@ -158,7 +158,7 @@ resource "aws_route53_record" "payment" {
   name    = "payment-dev.jakdevops.online"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.payment.private-ip]
+  records = [aws_instance.payment.private_ip]
 }
 
 resource "aws_instance" "cart" {
@@ -176,5 +176,5 @@ resource "aws_route53_record" "cart" {
   name    = "cart-dev.jakdevops.online"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.cart.private-ip]
+  records = [aws_instance.cart.private_ip]
 }
