@@ -1,6 +1,6 @@
 
 variable "security_groups" {
-  default = "sg-0da802b753384d70d"
+  default = [ "sg-0da802b753384d70d" ]
 }
 
 variable "zone_id" {
@@ -8,7 +8,7 @@ variable "zone_id" {
     }
 
   variable "components" {
-    default =
+    default = {
       frontend = {
          name = "frontend"
          instance_type = "t3.micro"
@@ -18,3 +18,4 @@ variable "zone_id" {
           instance_type = "t3.micro"
           }
         }
+      }
