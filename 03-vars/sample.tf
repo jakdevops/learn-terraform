@@ -30,7 +30,8 @@ output "furit_name"{
          stock =  2100
          price = 1
        }
-       guva = {         stock = 202
+       guva = {
+         stock = 202
          price = 1
         }
        }
@@ -64,6 +65,9 @@ output "furit_name"{
    }
 
    #variable in a combination of any other string then it needs to be within ${}
+
+   output "furit_name"
+    value = "furit_name = ${var.fruit_name}"
 
    output "fruit_details_apple"
       value =  "apple stock = ${var.fruit_details["apple"].stock} , apple type = ${var.fruit_details["apple"].type}, apple sale status = ${var.fruit_details["apple"].for_sale}"
