@@ -18,4 +18,3 @@ variable "zone_id" {
           instance_type = "t3.micro"
           }
         }
-     }
